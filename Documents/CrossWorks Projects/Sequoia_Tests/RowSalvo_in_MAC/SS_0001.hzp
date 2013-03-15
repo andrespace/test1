@@ -1,0 +1,29 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="SS_0001" target="9" version="2">
+  <project Name="SS_0001">
+    <configuration Name="Common" Platform="MSP430" Target="MSP430F1612" build_use_hardware_multiplier="16-Bit Multiplier" linker_memory_map_file="$(PackagesDir)/targets/msp430/MSP430F1612.xml" linker_section_placement_file="$(StudioDir)/targets/section_placement_info_ab_iv16.xml" msp430_debug_interface="JTAG" msp430_identify_string="MSP430F1612" msp430_insn_set="MSP430" project_directory="" project_type="Executable"/>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;h;s;asm;inc;s43"/>
+      <file file_name="/Users/andres/Documents/CrossWorks Projects/Sequoia_Tests/RowSalvo_in_MAC/main.c">
+        <configuration Name="Common" c_user_include_directories="/Users/andres/Sequoia_Space/Dev/Pumpkin/Salvo;/Users/andres/Documents/CrossWorks Projects/Sequoia_Tests/RowSalvo_in_MAC/"/>
+        <configuration Name="MSP430 Debug" c_user_include_directories=""/>
+        <configuration Name="Debug" c_user_include_directories="/Users/andres/Sequoia_Space/Dev/Pumpkin/Salvo/Inc;/Users/andres/Documents/CrossWorks Projects/Sequoia_Tests/RowSalvo_in_MAC"/>
+      </file>
+    </folder>
+    <folder Name="System Files">
+      <configuration Name="Common" filter="xml"/>
+      <file file_name="$(StudioDir)/src/crt0.asm"/>
+    </folder>
+    <folder Name="Salvo">
+      <file file_name="../../../../Sequoia_Space/Dev/Pumpkin/Salvo/Lib/RA430-v2/libsalvolra430it.hza"/>
+      <file file_name="../../../../Sequoia_Space/Dev/Pumpkin/Salvo/Inc/salvomem.h"/>
+      <file file_name="salvocfg.h"/>
+    </folder>
+  </project>
+  <configuration Name="MSP430 Debug" Target="MSP430F1612" build_use_hardware_multiplier="16-Bit Multiplier" inherited_configurations="MSP430;Debug" linker_memory_map_file="$(PackagesDir)/targets/msp430/MSP430F1612.xml" linker_section_placement_file="$(StudioDir)/targets/section_placement_info_ab_iv16.xml" msp430_debug_interface="JTAG" msp430_identify_string="MSP430F1612" msp430_insn_set="MSP430"/>
+  <configuration Name="MSP430" Platform="MSP430" hidden="Yes"/>
+  <configuration Name="Debug" build_debug_information="Yes" hidden="Yes"/>
+  <configuration Name="MSP430 Release" inherited_configurations="MSP430;Release"/>
+  <configuration Name="Release" build_debug_information="No" c_preprocessor_definitions="NDEBUG" hidden="Yes" optimize_block_locality="Yes" optimize_copy_propagation="Yes" optimize_cross_calling="Standard" optimize_cross_jumping="Yes" optimize_dead_code="Yes" optimize_jump_chaining="Yes" optimize_jump_threading="Yes" optimize_tail_merging="Yes"/>
+  <configuration Name="Common" c_user_include_directories="/Users/andres/Sequoia_Space/Dev/Pumpkin/Salvo/Inc;/Users/andres/Documents/CrossWorks Projects/Sequoia_Tests/RowSalvo_in_MAC"/>
+</solution>
